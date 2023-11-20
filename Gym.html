@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asit fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(img/gym.jpg);
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left:60px;
+            top: 20px;
+            line-height: 19px;
+            font-size: 23px;
+        }
+
+        .mid {
+            /* border: 2px solid rgb(41, 221, 44); */
+            display: block;
+            width: 50%;
+            margin: 29px auto;
+        }
+
+        .right {
+            /* border: 2px solid rgb(125, 34, 191); */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 18px;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 17px; 
+        }
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 32px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: gray;
+        }
+        .left img{
+            width: 120px;
+            /* filter: invert(1000); --if img color is black */
+        }
+        .left div{
+            text-align: center;
+            display: block;
+        }
+        .btn{
+            margin: 9px;
+            color: white;
+            background-color: #0f0d0d;
+            padding: 3px 4px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .btn:hover{
+            background-color: #814444;
+        }
+        .container{
+            border: 2px solid rgb(218, 205, 205);
+            margin: 151px 36px;
+            padding: 1px 56px;
+            width: 33%;
+            border-radius: 55px;
+            text-align: center;
+            float: right;
+        }
+        
+        .form-group input{
+            text-align: center;
+            display: block;
+            margin: 5px auto;
+            padding: 7px 5px;
+            width: 250px;
+            border: 2px solid rgb(175, 216, 129);
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border-radius: 5px;
+            text-decoration: black;
+        }
+        .container button{
+             width: 270px;
+             margin: 11px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.jpg" alt="">
+            <div>Asit Fittness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FTNESS CALCULATOR</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <!-- right box for bottons -->
+        <div class="right">
+            <button class="btn">call us now</button>
+            <button class="btn">Email now</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym</h1> 
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your locality">
+            </div>
+        </form>
+        <button class="btn">submit</button>
+    
+    
+    </div>
+</body>
+
+</html>
